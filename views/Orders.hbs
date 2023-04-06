@@ -1,0 +1,45 @@
+
+<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YOUR ORDERS</h1>
+<hr>
+<table>
+    <thead>
+        <tr>
+            <th>ORDERED ITEMS</th>
+            <th>QUANTITY</th>
+            <th>PRICE</th>
+            <th>DELETE</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+       <ul class="navbar" style="list-style: none;">
+            <li><a href="/admin">Admin</a></li>
+           <li><a href="/">Home</a></li>
+           <li><a href="/fruits">Fruits</a></li>
+           <li><a href="/cakes">Cakes</a></li>
+           <li><a href="/puffs">Puffs</a></li>
+           <li><a href="/icecream">Icecream</a></li>
+           
+        </ul>
+        {{#each row1}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.quantity}}</td>
+            <td>RS.{{this.cost}}</td>
+            <td><a href="/remove/?name={{this.name}}"  class="clk">Delete_Item</a></td>
+            
+        </tr>
+        {{/each}}
+        {{#each row2}}
+        <tr>
+            <td></td>
+            <td>TOTAL:{{this.cnt}}</td>
+            <td>AMOUNT: {{this.cos}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<br>
+<br>
+<br>
+<a class="list" href="/confirm">CONFIRM YOUR ORDERS</a>

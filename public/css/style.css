@@ -1,0 +1,171 @@
+html,body{
+ font-family:Arial, Helvetica, sans-serif;
+ background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(219,177,209,0.9137780112044818) 21%, rgba(148,187,233,1) 100%);
+}
+h1{
+    margin: auto 250px auto 400px;
+    color: rgb(55, 8, 244);
+    font-size: 40px;
+    text-shadow: 2px 2px 4px darkblue;
+}
+img{
+    padding: 25px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px #3705a2;
+    margin-top: 80px;
+}
+.bic{
+    float: right;
+    float: left;
+    margin: 23px;
+}
+div h2{
+    text-align: center;
+    color: rgb(0, 26, 255);
+    font-size: 28px;
+    padding: 30px;
+}
+table{
+    width: 450px;
+    height: fit-content;
+    margin: 90px 400px auto;
+    border:2px solid rgb(4, 4, 4);
+    padding:10px;
+    border-collapse: collapse;
+}
+table td{
+    border:2px solid rgb(4, 4, 4);
+    text-align: center;
+    padding: 5px;
+}
+table thead th{
+    padding: 5px;
+    background-color: rgb(157, 135, 235);
+    border:2px solid rgb(4, 4, 4);
+    
+}
+table tbody tr:nth-child(even){
+    background-color: rgb(157, 135, 235);
+}
+tr td:last-child{
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.edit{
+    background-color:rgb(14, 63, 226) ;
+    color:white;
+    display: block;
+    text-align: center;
+    width: 100px;
+    height: fit-content;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 2px;
+    margin-left: 40px;
+}
+.navbar li{
+    display: inline;
+    float: right;
+    padding: 10px;
+   
+   
+    
+}
+.navbar a{
+    text-decoration: none;
+    color: currentColor;
+    padding: 1px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    
+    
+}
+.list{
+   margin-left: 410px;
+   text-decoration: none;
+   border: 2px solid black;
+   border-radius: 10px;
+   color: beige;
+   background-color: blue;
+   font-size: 30PX;
+   /* text-shadow: 10PX 10PX 10PX RED; */
+}
+.fpm{
+   width: 400px;
+   margin-left:400px;
+   margin-top: 100px;
+  background-color: rgba(26, 26, 152, 0.693);
+   border-radius: 5px;
+   border: 3px solid rgb(11, 9, 9);
+   text-decoration:dotted;
+   
+}
+.fpm div,.fpm p{
+    padding: 20px;
+    font-size: 20px;
+}
+.adlog {
+    width: 400px;
+   margin-left:400px;
+   margin-top: 100px;
+  background-color: rgba(26, 26, 152, 0.693);
+   border-radius: 5px;
+   border: 3px solid rgb(11, 9, 9);
+   text-decoration:dotted;
+}
+.adlog div{
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.shop{
+    margin: 100px 600px;
+
+}
+.shop div input
+{
+    width: 350px;
+    height: 180px;
+    text-align: center;
+    padding: 3px;
+    font-size: 40px;
+    margin: 10px;
+    border-radius: 20px;
+    color: beige;
+    background-color: black;
+
+}
+.shop input:hover{
+    background-color: brown;
+}
+
+.clk{
+    text-decoration:none;
+    border: 4px solid rgb(49, 21, 102);
+    color:white;
+    border-radius:5px;
+    background-color:rgb(49, 21, 102);
+}
+.clk:hover{
+    color: red;
+}
+.added {
+    margin: 200px 500px;
+    width: fit-content;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 9px;
+    background-color: antiquewhite;
+
+}
+.added div{
+    margin: 5px;
+  
+    text-align: center;
+    justify-content: center;
+}

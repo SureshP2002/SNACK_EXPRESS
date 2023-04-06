@@ -1,0 +1,30 @@
+<h1>EDIT YOUR ITEM</h1>
+<hr>
+
+ <ul class="navbar" style="list-style: none;">
+            <li><a href="/admin">Admin</a></li>
+             <li><a href="/shop">Shop</a></li>
+           <li><a href="/">Home</a></li>
+    </ul>
+
+{{#each rows}}
+<form action="/edited" method="post">
+<div  class="added">
+    <div>
+        <label for="id" >ID</label>
+        <input type="number" name="id" id="id" value="{{this.id}}" readonly>
+    </div>
+    <div>
+    <label for="item">NAME</label>
+    <input type="text" name="item" required id="item"value="{{this.name}}" >
+    </div>
+    <div>
+    <label for="cost">COST</label>
+    <input type="number" required name="cost" value="{{this.cost}}">
+    </div>
+    <div>
+    <input type="submit" name="tb" value="{{this.tbn}}">
+    </div>
+</div>
+</form>
+{{/each}}

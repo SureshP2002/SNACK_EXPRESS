@@ -1,0 +1,60 @@
+<h1> List OF ORDERS</h1>
+<hr>
+
+ <ul class="navbar" style="list-style: none;">
+            <li><a href="/admin">Admin</a></li>
+             <li><a href="/shop">Shop</a></li>
+           <li><a href="/">Home</a></li>
+</ul>
+{{#each arr}}
+<table>
+    
+    <thead>
+       <tr>
+        <th colspan="4">ORDER BY: {{this.[0].person}}</th>
+        </tr>
+        <tr>
+        <th colspan="4">ADDRESS: {{this.[0].address}}</th>
+        </tr>
+        <tr>
+        <th colspan="4">PHONE NO: {{this.[0].phone}}</th>
+        </tr>
+        <tr>
+           <th>ID</th>
+            <th>ITEM</th>
+            <th>QUANTITY</th>
+            <th>PRICE</th>
+         </tr>
+    </thead>
+   
+    
+    <tbody>
+
+        {{#each this}}
+       
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.items}}</td>
+            <td>{{this.quantity}}</td>
+            <td>RS.{{this.cost}}</td>
+        </tr>
+        {{/each}}
+        <tr>
+        <td colspan="4" style=" font-weight: 900;">TOTAL_QUANTITY:&nbsp;&nbsp;&nbsp;{{this.[0].totalq}}</td>
+        </tr>
+        <tr>
+        <td colspan="4"style=" font-weight: 900;">TOTAL_COST:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{this.[0].totalc}}</td>
+        </tr>
+        <tr>
+            <td colspan="4" style=" font-weight: 900;"><a href="/delete/?id={{this.[0].person}}" onclick="return confirm('ARE YOU SURE')" class="clk">DELIVERED</a></td>
+        </tr>
+        
+      
+        
+        </tbody> 
+    <br>
+</table>
+{{/each}}
+
+<br>
+<br>

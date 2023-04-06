@@ -1,0 +1,41 @@
+<h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SNACKS</h1>
+<hr>
+
+ <ul class="navbar" style="list-style: none;">
+            <li><a href="/admin">Admin</a></li>
+             <li><a href="/shop">Shop</a></li>
+           <li><a href="/">Home</a></li>
+           
+</ul>
+{{#each lis}}
+<table>
+    <thead>
+        <tr>
+           <th>ID</th>
+            <th>ITEM</th>
+            <th>COST</th>
+            <th>DELETE</th>
+            <th>UPDATE</th>
+         </tr>
+    </thead>
+   <tbody>
+      {{#each this}}
+       
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.name}}</td>
+            <td>RS.{{this.cost}}</td>
+            <td><a href="/dltrow/?id={{this.id}}&it={{this.tbn}}"onclick="return confirm('ARE YOU SURE')" class="clk">DELETE</a></td>
+            <td><a href="/uptrow/?id={{this.id}}&it={{this.tbn}}" class="clk">UPDATE</a></td>
+        </tr>
+        {{/each}}
+        <tr>
+            <td colspan="5" style=" font-weight: 900;"><a href="/additem/?name={{this.[0].tbn}}" class="clk">ADD NEW ITEM</a></td>
+        </tr>
+        </tbody> 
+    <br>
+</table>
+{{/each}}
+
+<br>
+<br>

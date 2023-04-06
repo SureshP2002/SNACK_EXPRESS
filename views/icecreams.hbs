@@ -1,0 +1,36 @@
+
+<h1>CHOOSE ICECREAMS</h1>
+<HR></HR>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>VARIETIES</th>
+            <th>COST</th>
+            <th>MAKE UR ORDER</th>
+        </tr>
+    </thead>
+    <tbody>
+        <ul class="navbar" style="list-style: none;">
+            <li><a href="/admin">Admin</a></li>
+           <li><a href="/">Home</a></li>
+           <li><a href="/fruits">Fruits</a></li>
+           <li><a href="/cakes">Cakes</a></li>
+           <li><a href="/puffs">Puffs</a></li>
+           <li><a href="/icecream">Icecream</a></li>
+           
+        </ul>
+        {{#each rows}}
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.name}}</td>
+            <td>RS.{{this.cost}}</td>
+            <td><a href="/ordericecream/?id={{this.id}}" class="edit">ORDER</a></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<br>
+<br>
+<br>
+<a class="list" href="/ordereditems">CHECK YOUR ORDERS</a>

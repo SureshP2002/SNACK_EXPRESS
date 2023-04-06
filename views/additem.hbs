@@ -1,0 +1,25 @@
+<h1>ADD YOUR ITEM</h1>
+<hr>
+
+ <ul class="navbar" style="list-style: none;">
+            <li><a href="/admin">Admin</a></li>
+             <li><a href="/shop">Shop</a></li>
+           <li><a href="/">Home</a></li>
+    </ul>
+
+
+<form action="/added" method="post">
+<div  class="added">
+    <div>
+    <label for="item">Item</label>
+    <input type="text" name="item" required id="item" >
+    </div>
+    <div>
+    <label for="">Cost</label>
+    <input type="number" required name="cost">
+    </div>
+    <div>
+    <input type="submit" name="tb" value="{{tb}}">
+    </div>
+</div>
+</form>
